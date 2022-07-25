@@ -2,4 +2,4 @@
 
 ## Setup
 
-Checkout readme.md file in frontend and backend directories for setup instructions.
+Checkout readme.md file in frontend/myapp and backend directories for setup instructions.
