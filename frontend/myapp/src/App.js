@@ -48,13 +48,13 @@ class App extends Component {
       <>
       
         <div className='container'>
-        <h1>Simmi Foundation Organization Tasks</h1>
+        <h1 className='text-center'>React-Django Gallery Project</h1>
         {post.length !== 0  ? 
         <>
-        <h2 className='text-center'>Task 1</h2>
+        <h2 className='text-center'>Form</h2>
         <Form refresh={this.getPost} />
   
-        <h2 className='mt-5 text-center'>Task 2</h2>
+        <h2 className='mt-5 text-center'>Gallery</h2>
         {post.success ? 
   
           <Card data={post} />

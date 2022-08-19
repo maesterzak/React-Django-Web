@@ -1,8 +1,10 @@
+from telnetlib import STATUS
 from django.shortcuts import render
 from rest_framework.response import Response
 from .models import *
 from django.http import HttpResponse
 from rest_framework.decorators import api_view
+from rest_framework.views import APIView
 from .serializers import *
 # Create your views here.
 
@@ -12,7 +14,7 @@ def index(request):
     try:
         posts = Post.objects.all().order_by('id')
         serializer = PostSerializer(posts, many = True)
-
+                
         return Response ({
             "success":True,
             "data": serializer.data
@@ -47,6 +49,5 @@ def post_create(request):
             
         }
     )
-    
 
-    
+

@@ -13,10 +13,12 @@ class Form extends Component {
     //     headers: {
     //     Accept: "application/json",
     //     "content-type": "application/json",
+ //       'Authorization': `Bearer ${token}`,
     //     },
     //     body: JSON.stringify(data),
     axios
       .post("http://127.0.0.1:8000/post", data)
+      
       .then(res => console.log(res))
       .catch(err => console.log(err));
         alert('Post Added')
